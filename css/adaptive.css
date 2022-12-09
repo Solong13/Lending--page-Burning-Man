@@ -1,0 +1,221 @@
+@media screen and (max-width: 1200px) { 
+    .container {
+        width: 1140px;
+    }
+}
+
+@media screen and (max-width: 1199px) { 
+    .container {
+        width: 960px;
+    }
+    .desc-left, .desc-right {
+        width: 48%;
+    }
+    .gallery img:nth-child(1){  /* находит один или более элементов, основываясь на их позиции среди группы соседних элементов.*/
+        width: 25%;
+    }
+    .gallery img:nth-child(2){
+        width: 25%;
+    }
+    .gallery img:nth-child(3){
+        width: 48%;
+    }
+    .gallery, .Photo1, .Photo2 {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 991px) { 
+    .container {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    .container {
+        width: 540px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-open {
+        display: block;
+    }
+    .offer h1 {
+        line-height: 1em;
+        margin-top: 10px;
+    }
+    .description {
+        flex-wrap: wrap ; /*задаёт правила вывода flex-элементов —  в одну строку или в несколько, с переносом блоков. Если перенос разрешён, то возможно задать направление, в котором выводятся блоки.*/
+    }
+    .desc-left,.desc-right {
+        width: 100%;
+    }
+    .desc-left {
+        margin-bottom: 40px;
+    }
+    .desc-left, h3 {
+        margin-bottom: 20px;
+    }
+    .desc-right, h3 {
+        margin-bottom: 20px;
+    }
+    .gallery img {
+        width: 100%;
+    }
+    .gallery img:nth-child(1),
+    .gallery img:nth-child(2),
+    .gallery img:nth-child(3) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .gallery {
+        flex-wrap: wrap;
+    }
+    .footer-tex {
+        flex-wrap: wrap;
+    }
+    .footer-tex p:nth-child(1){
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) { 
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+} 
+
+
+
+
+/*Responsive*/
+ 
+/*992px - 1200px*/
+/*@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .header {
+        width: 960px;
+        margin: 0 ;
+        
+    }
+    
+    .tel {
+        margin-left: 300px;
+    }
+ 
+
+    .description, .desc-left, h3 {
+        align-items: center;
+      
+    }
+
+    .description, .desc-left, .desc-right {
+        display: block;
+        margin: auto;
+      
+    }
+
+    .desc-left, h3 {
+        padding-bottom: 20px;
+    }
+
+    .container, h2 {
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container, .gallery {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .container, .footer-text {
+        width: max-content;
+    }
+}
+
+
+
+/*768px - 992px*/
+/*@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+        margin: 0 auto;
+    }
+}
+
+/*576px - 768px*/
+/*@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+}
+
+/*0px - 576px*/
+/*@media screen and (max-width: 576px) {
+     .container {
+        width: 90%;
+          /* overflow:hidden;
+        overflow-x:hidden;s
+        overflow-y:hidden;
+        */ 
+   /* }
+    
+
+  .container, h2 {
+          margin-left: 175px;
+    }
+
+    .description{
+        margin-bottom: 5px;
+        width: 40%;
+    }
+
+    .gallery {
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .gallery, .Photo1, .Photo2{
+        margin-top: 20px;
+        margin-left: 128px;
+    }
+
+    .gallery, .Photo3{
+        margin-top: 20px;
+    }
+
+    .tel {
+        margin-left: 20px;
+    }
+
+    .offer, h1{
+        width: 400px;
+    }
+
+    .menu li {
+        margin-right: 12px;
+    }
+
+    .logo {
+        margin:  0 12px 0 69px;
+    }
+
+    .footer-text {
+        margin-left: 140px;
+    }
+    
+}

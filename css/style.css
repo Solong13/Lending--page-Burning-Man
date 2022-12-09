@@ -1,0 +1,199 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    color:000;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 58px;
+} 
+
+h3 {
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 113px;
+}
+
+ p {
+     margin: 0;
+ }
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 0 ;
+    padding: auto;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url('../img/header-bg.jpg') no-repeat center top / cover; /*Растянуть картинку*/
+    padding-top: 57px;
+    padding-bottom: 322px;
+}
+
+header a {
+    color: #FFFFFF;
+}
+.menu {
+    display: flex; /*Выравнивание по горизонтали*/
+}
+
+.menu li a {
+    text-transform:  uppercase; 
+    text-decoration: none;/*Убрать подчеркивание*/
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+.tel {
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: auto; /*прижать элемент к левому краю*/
+    letter-spacing: 0.1em;
+    margin-right: 25px;
+       
+}
+
+.nav {
+    display: flex; /*Выравнивание по горизонтали*/
+    align-items: center;
+}
+
+.logo {
+    margin:  0 40px 0 69px;
+}
+
+.offer {
+    text-transform: uppercase;
+    margin-top: 216px;
+    color: #FFF;
+    margin-left: 69px;
+    
+}
+
+.offer p  {
+    font-size: 30px;
+    letter-spacing: 0.1em;
+}   
+
+.offer a {
+    font-size: 17px;
+}
+
+.offer h1 {
+    font-size: 100px;
+    margin-bottom: 19px;
+    margin-top: -9px;
+    letter-spacing: 0.02em;
+}
+
+.btn {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 17px 47px;
+    border: 1px solid #fff;
+    width: 238px;
+    text-decoration: none;
+    transition: all 0.5s ease; /*Анимация всех свойств за 5 сек, плавно*/
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;  /*Раздвигает два элеммента по краям если указан перед этим display: flex; */
+}
+
+.description p {
+    font-family: Open Sans;
+    font-weight: 400px;
+    text-align: justify; /*Равняет текст в столбце*/
+    line-height: 1.62em; /*высота строки где em , как проценты */
+}
+
+.desc-left, .desc-right {
+    width: 567px;
+}
+
+.gallery {
+    margin-top: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    padding: 114px 0;
+}
+
+.footer-text p {
+    margin-right: 67px;
+}
+
+
+
+.header .show-menu {
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    width: 50%;
+    padding: 40px 20px 20px 40px;
+}
+
+button:focus {
+    outline: none;
+}
+ 
+.header .show-menu li {
+    margin-right: 20px;
+}
+
+.menu-open{
+    background: none;
+    border: none;
+    margin-left: 20px;
+    display: none;
+}
